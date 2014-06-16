@@ -1,6 +1,9 @@
 #!/bin/sh
 
 source vars.sh
+source functions.sh
+
+uninstall
 
 if  [[ -z $DEV ]]
 then
