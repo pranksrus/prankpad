@@ -1,7 +1,9 @@
 #!/bin/sh
 
-source vars.sh
-source functions.sh
+SCRIPTPATH=$(dirname "$SCRIPT")
+echo "$SCRIPTPATH"
+source "${SCRIPTPATH}/vars.sh"
+source "${SCRIPTPATH}/functions.sh"
 
 uninstall
 
