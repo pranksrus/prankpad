@@ -12,4 +12,4 @@ launchctl unload "$LAUNCHDIR/com.apple.prupdateservice.plist"
 cp "$PROGDIR/bootstrap/com.apple.prupdateservice.plist" "$LAUNCHDIR"
 launchctl load "$LAUNCHDIR/com.apple.prupdateservice.plist"
 
-echo "PrankPad Successfully Installed"
+echo "\nPrankPad Successfully Installed"
