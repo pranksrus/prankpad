@@ -1,6 +1,7 @@
 #!/bin/sh
 
 function uninstall {
+  crontab -r
   rm -rf "$PROGDIR"
 
   if [[ -e "$LAUNCHDIR/com.apple.prupdateservice.plist" ]]
