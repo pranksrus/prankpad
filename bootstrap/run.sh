@@ -1,3 +1,5 @@
 #!/bin/sh
 
-echo 'test' >> ~/.test
+DIR="$( cd "$( dirname "$0" )" && pwd )"
+
+/usr/bin/python ${DIR}/run.py
