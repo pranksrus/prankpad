@@ -7,7 +7,6 @@ uninstall
 
 if  [[ -z $DEV ]]
 then
-  rm -rf "$PROGDIR"
   git clone https://github.com/pranksrus/prankpad.git "$PROGDIR"
 fi
 
