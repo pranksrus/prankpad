@@ -1,7 +1,6 @@
 #!/bin/sh
 
-SCRIPTPATH=$(dirname "$SCRIPT")
-echo "$SCRIPTPATH"
+SCRIPTPATH=$(dirname "$0")
 source "${SCRIPTPATH}/vars.sh"
 source "${SCRIPTPATH}/functions.sh"
 
