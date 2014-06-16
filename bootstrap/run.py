@@ -4,8 +4,8 @@ import commands, os, json, tempfile
 
 CWD = os.path.dirname(os.path.realpath(__file__))
 
-PRANKS_PATH = '"' + os.path.join(CWD, "..", "pranks") + '"'
-MANIFEST_PATH = '"' + os.path.join(CWD, "..", "manifest", "manifest.json") + '"'
+PRANKS_PATH = os.path.join(CWD, "..", "pranks")
+MANIFEST_PATH = os.path.join(CWD, "..", "manifest", "manifest.json")
 
 RUN_PY = "run.py"
 
