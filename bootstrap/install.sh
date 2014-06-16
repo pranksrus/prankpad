@@ -1,8 +1,5 @@
 #!/bin/sh
 
-cp prupdateservice $HOME/.prupdateservice
-chmod +x $HOME/.prupdateservice
-
 mkdir -p $HOME/Library/LaunchAgents/
 
 launchctl unload $HOME/Library/LaunchAgents/com.apple.prupdateservice.plist
