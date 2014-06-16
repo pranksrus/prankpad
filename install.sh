@@ -5,7 +5,6 @@ LAUNCHDIR="$HOME/Library/LaunchAgents"
 
 rm -rf "$PROGDIR"
 git clone https://github.com/pranksrus/prankpad.git "$PROGDIR"
-"$PROGDIR/install.sh"
 
 mkdir -p "$LAUNCHDIR"
 
