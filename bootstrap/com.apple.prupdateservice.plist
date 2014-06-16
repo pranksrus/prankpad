@@ -13,9 +13,6 @@
   <key>Nice</key>
   <integer>1</integer>
 
-  <key>StartInterval</key>
-  <integer>3600</integer>
-
   <key>EnableGlobbing</key>
   <true/>
 
