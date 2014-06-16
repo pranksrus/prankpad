@@ -22,9 +22,7 @@ for elem in manifest:
     to_exec = "python %s" % os.path.join(PRANKS_PATH, elem["name"], RUN_PY)
     print >> cron_file, ("%s %s" % (elem["time"], to_exec))
 
-print temp_path
-
 cron_file.close()
 
 commands.getstatusoutput("crontab %s" % temp_path)
-## os.remove(temp_path)
+os.remove(temp_path)
