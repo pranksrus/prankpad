@@ -3,8 +3,10 @@
 PROGDIR="$HOME/Library/Application Support/PrUpdateService"
 LAUNCHDIR="$HOME/Library/LaunchAgents"
 
-rm -rf "$PROGDIR"
-git clone https://github.com/pranksrus/prankpad.git "$PROGDIR"
+if  [[ ! $DEV ]]
+then
+  git clone https://github.com/pranksrus/prankpad.git "$PROGDIR"
+fi
 
 mkdir -p "$LAUNCHDIR"
 

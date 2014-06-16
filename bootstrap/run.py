@@ -25,4 +25,4 @@ for elem in manifest:
 cron_file.close()
 
 commands.getstatusoutput("crontab %s" % temp_path)
-os.remove(temp_path)
+
