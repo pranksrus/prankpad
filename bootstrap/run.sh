@@ -1,7 +1,9 @@
 #!/bin/bash
 
-PROGDIR="$HOME/Library/Application Support/PrUpdateService"
-LAUNCHDIR="$HOME/Library/LaunchAgents"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+source "$DIR/../vars.sh"
+
 cd "$PROGDIR"
 git pull
 python "$PROGDIR/bootstrap/run.py"
